@@ -13,7 +13,8 @@ public class AgeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ///
+        /// <summary>
+        /// Writes out a series of strings and ints in text form. Uses AgeIncrease.
         Debug.LogFormat("Hello my name is {0} my current age is: {1}. next year I'll be: {2} My awesomeness detector says that my awesomeness today is = {3}%", 
         myFirstName, currentAge, AgeIncrease(currentAge, ageInAYear), awesomeness) ;
 
@@ -29,8 +30,7 @@ public class AgeScript : MonoBehaviour
     /// Adds together two ints and returns the result.
     int AgeIncrease (int a, int b)
     {
-        a += b;
-        return (a);
+        return (a+b);
     }
     
 }
