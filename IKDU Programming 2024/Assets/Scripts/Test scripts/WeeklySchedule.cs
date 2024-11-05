@@ -12,6 +12,20 @@ public class WeeklySchedule : MonoBehaviour
     {
         Schedule();
         Schedule2();
+         int listLength = Days.Count;
+ for (int i = 0; i < listLength; i++)
+ {
+
+    Debug.LogFormat("Index: {0} - {1}", i, Days[i]);
+    if (Days[i] == "Friday")
+    {
+        Debug.LogFormat("Niiiice, go drink a beer!");
+    }
+ } 
+     foreach(string j in Days)
+ {
+    Debug.LogFormat("{0} - Here!", j);
+ } 
     }
 
     // Update is called once per frame
@@ -79,4 +93,5 @@ public class WeeklySchedule : MonoBehaviour
     {
         Debug.LogFormat("Today it is: {0}", Days[dayOfTheWeek]);
     }
+    
 }
